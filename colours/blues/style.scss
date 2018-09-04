@@ -1,0 +1,61 @@
+
+    $background: #051B2E;
+    $linkcolor: #9eb8cf;
+
+    body {
+        background-color: $background;
+    }
+
+
+    .topbar {
+        background: #02101b;
+        color: #EEE;
+        width: auto;
+        padding: 15px;
+        border-bottom: 1px solid #1a3248;
+        
+        a {
+            color: #EEE;
+            text-decoration: none;
+            &:hover {
+                color: #FFF;
+            }
+        }
+
+    }
+
+    .menu {
+
+        padding: 0 15px;
+        display: inline;
+
+        > .item {
+            margin-left: 15px;
+            height: 50px;
+            padding: 25px;
+            color: #FFF;
+
+            display: block;
+
+            width: auto;
+            float: left;
+
+            color: $linkcolor;
+
+            &.active {
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 0;
+                border-image: linear-gradient(90deg,#2aa2da 0,#52ffff);
+                border-image-slice: 1;
+                border-top: 2px solid transparent;
+                color: #FFF;
+            }
+
+            &:hover {
+                color: #FFF;
+            }
+
+
+        }
+    }
